@@ -10,10 +10,11 @@ export default function Navbar() {
 
   const navItems = [
     { num: "01", label: "WALKTHROUGH", href: "/#tour" },
-    { num: "02", label: "JUKEBOX", href: "/jukebox" },
-    { num: "03", label: "VIDEOS", href: "/videos" },
-    { num: "04", label: "RIGS", href: "/spaces" },
-    { num: "05", label: "BOOK", href: "/contact" },
+    { num: "02", label: "SERVICES", href: "/products-services" },
+    { num: "03", label: "JUKEBOX", href: "/jukebox" },
+    { num: "04", label: "VIDEOS", href: "/videos" },
+    { num: "05", label: "RIGS", href: "/spaces" },
+    { num: "06", label: "BOOK", href: "/contact" },
   ];
 
   return (

@@ -69,6 +69,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/products-services" className="hover:text-[#F79192] transition-colors">
+                  Products & Services (130+ Directory)
+                </Link>
+              </li>
+              <li>
                 <Link href="/jukebox" className="hover:text-[#F79192] transition-colors">
                   3D Fan Carousel Jukebox
                 </Link>
