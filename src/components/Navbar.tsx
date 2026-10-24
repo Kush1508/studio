@@ -50,20 +50,13 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Right Zone: Secondary Action + Solidroad-style Coral Pill CTA */}
-          <div className="flex items-center gap-4 sm:gap-6">
+          {/* Right Zone: Single Contact Pill CTA */}
+          <div className="flex items-center gap-3">
             <Link
               href="/contact"
-              className="hidden lg:inline-block font-sans text-xs sm:text-[13px] lg:text-sm font-semibold text-zinc-300 hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2 sm:py-2.5 rounded-full bg-[#F79192] hover:bg-[#FFA4A5] text-[#0C1014] font-sans text-xs sm:text-sm font-black tracking-tight transition-all duration-200 shadow-[0_4px_18px_rgba(247,145,146,0.4)] hover:shadow-[0_6px_25px_rgba(247,145,146,0.6)] hover:scale-[1.03]"
             >
-              Contact
-            </Link>
-
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#F79192] hover:bg-[#FFA4A5] text-[#0C1014] font-sans text-xs sm:text-sm font-black tracking-tight transition-all duration-200 shadow-[0_4px_18px_rgba(247,145,146,0.4)] hover:shadow-[0_6px_25px_rgba(247,145,146,0.6)] hover:scale-[1.03]"
-            >
-              <span>Book Studio</span>
+              <span>Contact</span>
               <ArrowUpRight className="w-4 h-4 text-[#0C1014] stroke-[2.5]" />
             </Link>
 
@@ -93,21 +86,14 @@ export default function Navbar() {
               <ArrowUpRight className="w-4 h-4 text-zinc-400" />
             </Link>
           ))}
-          <Link
-            href="/contact"
-            onClick={() => setMobileMenuOpen(false)}
-            className="py-2.5 text-zinc-200 hover:text-[#F79192] font-semibold border-b border-white/10 flex items-center justify-between transition-colors"
-          >
-            <span>Contact & Location</span>
-            <ArrowUpRight className="w-4 h-4 text-zinc-400" />
-          </Link>
 
           <Link
             href="/contact"
             onClick={() => setMobileMenuOpen(false)}
-            className="mt-2 w-full py-3 rounded-full bg-[#F79192] hover:bg-[#FFA4A5] text-[#0C1014] text-center text-sm font-bold transition-all shadow-[0_4px_18px_rgba(247,145,146,0.35)]"
+            className="mt-2 w-full py-3 rounded-full bg-[#F79192] hover:bg-[#FFA4A5] text-[#0C1014] text-center text-sm font-bold transition-all shadow-[0_4px_18px_rgba(247,145,146,0.35)] flex items-center justify-center gap-2"
           >
-            Book Studio Session →
+            <span>Contact</span>
+            <ArrowUpRight className="w-4 h-4 text-[#0C1014] stroke-[2.5]" />
           </Link>
         </div>
       )}
