@@ -10,8 +10,8 @@ export default function Navbar() {
 
   // Clean nav items without any numbers
   const navItems = [
+    { label: "Home", href: "/" },
     { label: "Products & Services", href: "/products-services", hasDropdown: true },
-    { label: "Walkthrough", href: "/#tour" },
     { label: "Jukebox", href: "/jukebox" },
     { label: "Videos", href: "/videos" },
     { label: "Rigs", href: "/spaces" },
