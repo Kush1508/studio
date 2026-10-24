@@ -438,7 +438,7 @@ export default function StudioWalkthrough() {
       {/* VIEWPORT CORNER HUD TELEMETRY */}
 
       {/* Top-Left: [ KORAL_LAB • 4K SPATIAL WALKTHROUGH ] */}
-      <div className="absolute top-20 sm:top-24 left-6 sm:left-8 z-20 pointer-events-none">
+      <div className="absolute top-24 sm:top-28 left-6 sm:left-8 z-20 pointer-events-none">
         <div className="flex items-center gap-2.5 bg-black/85 backdrop-blur-md px-5 py-2.5 border border-zinc-700 rounded-lg font-mono text-xs sm:text-sm uppercase tracking-wider text-zinc-200 shadow-2xl font-bold">
           <span className="w-2.5 h-2.5 rounded-full bg-[#F79192] animate-pulse shadow-[0_0_8px_rgba(247,145,146,0.8)]" />
           <span>[ KORAL_LAB • 4K SPATIAL WALKTHROUGH ]</span>
@@ -446,7 +446,7 @@ export default function StudioWalkthrough() {
       </div>
 
       {/* Top-Right: Play/Pause Toggle & Frame Counter */}
-      <div className="absolute top-20 sm:top-24 right-6 sm:right-8 z-20 flex items-center gap-3">
+      <div className="absolute top-24 sm:top-28 right-6 sm:right-8 z-20 flex items-center gap-3">
         {/* Play/Pause Video Button */}
         <button
           onClick={togglePlay}

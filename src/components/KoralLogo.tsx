@@ -7,12 +7,14 @@ interface KoralLogoProps {
   className?: string;
   showText?: boolean;
   size?: "sm" | "md" | "lg";
+  darkText?: boolean;
 }
 
 export default function KoralLogo({
   className = "",
   showText = true,
   size = "md",
+  darkText = false,
 }: KoralLogoProps) {
   const sizeClasses = {
     sm: "w-9 h-9",
@@ -38,10 +40,18 @@ export default function KoralLogo({
 
       {showText && (
         <div className="flex flex-col leading-none">
-          <span className="font-syne font-black uppercase tracking-[-0.03em] text-lg sm:text-xl lg:text-2xl text-white group-hover:text-[#F79192] transition-colors">
+          <span
+            className={`font-syne font-black uppercase tracking-[-0.03em] text-lg sm:text-xl lg:text-2xl ${
+              darkText ? "text-zinc-950 group-hover:text-[#D94546]" : "text-white group-hover:text-[#F79192]"
+            } transition-colors`}
+          >
             KORAL
           </span>
-          <span className="font-mono text-xs sm:text-[13px] tracking-[0.3em] text-[#F79192] uppercase mt-0.5 font-bold">
+          <span
+            className={`font-mono text-xs sm:text-[13px] tracking-[0.3em] ${
+              darkText ? "text-[#E05D5E]" : "text-[#F79192]"
+            } uppercase mt-0.5 font-bold`}
+          >
             RECORDS
           </span>
         </div>
