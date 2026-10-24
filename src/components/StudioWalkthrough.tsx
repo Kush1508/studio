@@ -144,8 +144,8 @@ export default function StudioWalkthrough() {
     const displayH = window.innerHeight;
     if (displayW === 0 || displayH === 0) return;
 
-    // Use device pixel ratio for sharp retina rendering
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    // Use full device pixel ratio for razor-sharp 4K rendering
+    const dpr = typeof window !== "undefined" ? Math.max(window.devicePixelRatio || 1, 1) : 1;
 
     canvas.width = Math.round(displayW * dpr);
     canvas.height = Math.round(displayH * dpr);
@@ -405,9 +405,7 @@ export default function StudioWalkthrough() {
           isReady || loadProgress > 3 ? "opacity-100" : "opacity-0"
         }`}
         style={{
-          // Optical clarity: Boost micro-contrast and saturation to eliminate ezgif compression flatness
-          filter: "contrast(1.08) brightness(1.03) saturate(1.08)",
-          imageRendering: "auto",
+          imageRendering: "crisp-edges",
         }}
       />
 
